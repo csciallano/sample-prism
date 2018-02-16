@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs
+/PrismBoilerplate/PrismBoilerplate/bin/Debug/netstandard2.0
+/PrismBoilerplate/PrismBoilerplate/obj
+/PrismBoilerplate/PrismBoilerplate.Android/obj
+/PrismBoilerplate/PrismBoilerplate.iOS/obj
+/PrismBoilerplate/PrismBoilerplate.UWP/bin/x86/Debug
+/PrismBoilerplate/PrismBoilerplate.UWP/obj

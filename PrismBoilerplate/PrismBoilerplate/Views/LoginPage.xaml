@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrismBoilerplate.Views.LoginPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="primaryColor">#ff3467</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" >
+
+                <Label HeightRequest="110"  
+                          HorizontalOptions="FillAndExpand" 
+                          Text="{Binding Title}" 
+                          BackgroundColor="{StaticResource primaryColor}"
+                          TextColor="White" 
+                          FontSize="40" 
+                          HorizontalTextAlignment="Center"
+                          VerticalTextAlignment="Center"/>
+
+                <Entry  Margin="20,40,20,0" Placeholder="Email" Text="{Binding UserName}">
+                </Entry>
+
+                <Entry Margin="20,0,20,0" IsPassword="true" Placeholder="Password" Text="{Binding Password}">
+                </Entry>
+
+                <Button Margin="20,0,20,0" 
+                         TextColor="White" 
+                         Text="Login"  
+                         BackgroundColor="{StaticResource primaryColor}"
+                         HorizontalOptions="FillAndExpand"
+                         Command="{Binding LoginCommand}"/>
+
+                <Button Margin="20,0,20,0" 
+                         HeightRequest="50" 
+                         TextColor="White" 
+                         Text="Register"
+                         BackgroundColor="Gray"
+                         HorizontalOptions="FillAndExpand"
+                         Command="{Binding RegisterCommand}"/>
+
+                <Label Text="Forgot password" HorizontalOptions="Center" TextColor="{StaticResource primaryColor}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>
